@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Работа с log.txt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            width: 600px;
+        }
+        h1 {
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Работа с файлом log.txt</h1>
+
+<form action="text.php" method="post">
+    <textarea name="text" placeholder="Введите текст для записи..." required></textarea><br>
+    <input type="submit" value="Сохранить">
+</form>
+</body>
+</html>

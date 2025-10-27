@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Загрузка файла</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            width: 400px;
+            text-align: center;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h2>Загрузка изображения</h2>
+<form enctype="multipart/form-data" action="process.php" method="POST">
+    <input type="file" name="user_file" accept=".png,.jpg,.jpeg,image/png,image/jpeg" required><br><br>
+    <input type="submit" value="Отправить">
+</form>
+</body>
+</html>
